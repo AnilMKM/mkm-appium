@@ -1,6 +1,7 @@
 node_modules/
-test-results/
 dist/
+test-results/
 *.log
 .env
 .DS_Store
+.yarn/install-state.gz

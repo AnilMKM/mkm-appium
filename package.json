@@ -1,0 +1,25 @@
+{
+  "name": "mkm-appium",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Standalone Appium + WebdriverIO E2E and feature tests for the MKM mobile app",
+  "scripts": {
+    "test": "NODE_OPTIONS='--experimental-vm-modules' jest --config jest.config.js",
+    "test:ios": "NODE_OPTIONS='--experimental-vm-modules' PLATFORM=ios jest --config jest.config.js",
+    "test:android": "NODE_OPTIONS='--experimental-vm-modules' PLATFORM=android jest --config jest.config.js",
+    "test:bs:ios": "NODE_OPTIONS='--experimental-vm-modules' PLATFORM=ios jest --config jest.config.js",
+    "test:bs:android": "NODE_OPTIONS='--experimental-vm-modules' PLATFORM=android jest --config jest.config.js"
+  },
+  "devDependencies": {
+    "@types/jest": "29.5.14",
+    "@types/node": "^20.14.0",
+    "jest": "~29.7.0",
+    "jest-junit": "^16.0.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "~5.9.2",
+    "webdriverio": "^9.24.0"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
